@@ -1,3 +1,28 @@
-.button  {
-  background: none;
+.button {
+  /*шрифт*/
+  font: inherit; /*или в каждом файле прописывать шрифт?*/
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 58px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  /*форма*/
+  width: 280px;/*458 для экрана*/
+  height: 58px;
+  background-color: var(--light-grey-blue);
+  display: block;
+  border: none;
 }
+
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+
+
+.button:active {
+  background-color: #5496bd;
+  color:rgba(255, 255, 255, 0.3);
+}
+
